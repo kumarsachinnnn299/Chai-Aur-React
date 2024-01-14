@@ -23,7 +23,42 @@ function App() {
   const addValue=()=>{
     console.log('clicked',Math.random());
     if(counter<20)
-    setCounter(counter+1)
+    {
+
+      /*
+         setCounter(counter+1)
+         setCounter(counter+1)
+         setCounter(counter+1)
+         setCounter(counter+1)
+
+         agar hum aese krr de to kya +4 ho jayega. Nhi aesa nhi hoga. As react fiber do task in batches. ab 
+         is kaam ko wo dekhega ki same hi to ho rha to inka ek hi batch bna dega and bas ek baar +1 hoga.
+         if we want to add+4 by this way we can do this by
+
+            setCounter((prevCounter)=>{
+              return prevCounter+1;
+            })
+            setCounter((prevCounter)=>{
+              return prevCounter+1;
+            })
+            setCounter((prevCounter)=>{
+              return prevCounter+1;
+            })
+            setCounter((prevCounter)=>{
+              return prevCounter+1;
+            })
+
+            or just
+
+               setCounter(prevCounter=>prevCounter+1)
+               setCounter(prevCounter=>prevCounter+1)
+               setCounter(prevCounter=>prevCounter+1)
+               setCounter(prevCounter=>prevCounter+1)
+
+      */
+      setCounter(counter+1)
+
+    }
   }
 
   const decreaseValue=()=>{
