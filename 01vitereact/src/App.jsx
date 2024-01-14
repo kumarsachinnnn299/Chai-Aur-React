@@ -2,10 +2,10 @@ import { useState } from 'react'
 
 
 function App() {
- 
+ const username='Sachin Kumar SIngh'
 
   return (
-    <h1>React with Vite || Sachin Kumar Singh</h1>
+    <h1>React with Vite || {username}</h1>
   )
 }
 
