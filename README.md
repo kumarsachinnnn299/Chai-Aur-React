@@ -41,6 +41,8 @@ In summary, while a library provides specific functionalities that developers ca
   * No SEO, browser render of JS, no routing etc
 * Frameworks on top of React: NextJS, Gatsby, Remix
 
+## React Fiber [Click Here to study](https://github.com/acdlite/react-fiber-architecture)
+
 
 
 
