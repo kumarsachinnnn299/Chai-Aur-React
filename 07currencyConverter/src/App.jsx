@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {InputBox} from './components'// ab ye direct likhne se ho jayega as index file in components will run automatically
+import InputBox from './components'// ab ye direct likhne se ho jayega as index file in components will run automatically
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 
 function App() {
@@ -13,10 +13,12 @@ function App() {
   const options = Object.keys(currencyInfo)
 
   const swap = () => {
+    const fromVal=amount
+    const toVal=convertedAmount
     setFrom(to)
     setTo(from)
-    setConvertedAmount(amount)
-    setAmount(setConvertedAmount)
+    setConvertedAmount(fromVal)
+    setAmount(toVal)
   }
 
   const convert = () => {
@@ -45,7 +47,10 @@ function App() {
                   label="From"
                   amount={amount}
                   currencyOptions={options}
-                  onCurrencyChange={(currency) => setAmount(amount)}
+                  onCurrencyChange={(currency) => {
+                    setFrom(currency)
+                    setConvertedAmount(0)
+                  }}
                   selectCurrency={from}
                   onAmountChange={(amount) => setAmount(amount)}
                 />
@@ -65,7 +70,7 @@ function App() {
                   amount={convertedAmount}
                   currencyOptions={options}
                   onCurrencyChange={(currency) => setTo(currency)}
-                  selectCurrency={from}
+                  selectCurrency={to}
                   amountDisable
                 />
               </div>

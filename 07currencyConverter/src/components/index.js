@@ -5,4 +5,4 @@ Kyuki components bahut saare ho skte h kisi page m to sabko individually unki fi
 h ki is file m sabko import krke is file se sabko import krr le*/
 
 import InputBox from "./InputBox";
-export default {InputBox}
+export default InputBox
