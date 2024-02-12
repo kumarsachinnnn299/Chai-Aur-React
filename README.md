@@ -43,6 +43,8 @@ In summary, while a library provides specific functionalities that developers ca
 
 ## React Fiber [Click Here to study](https://github.com/acdlite/react-fiber-architecture)
 
+## React Redux [Click](https://redux-toolkit.js.org/introduction/getting-started)
+
 
 
 
