@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import {removeTodo} from '../features/todo/todoSlice'
 
 function Todo() {
+
+    //Selector values lene k liye from store, dispatcher values bhejne k liye in the store
     const todos = useSelector(state => state.todos)
     const dispatch = useDispatch()
 
