@@ -3,11 +3,11 @@ import conf from './conf/conf';
 function App() {
  //To read env file
 
- console.log(conf.appwriteBucketId);
- console.log(conf.appwriteCollectionId);
- console.log(conf.appwriteDatabaseId);
- console.log(conf.appwriteProjectId);
- console.log(conf.appwriteUrl);
+//  console.log(conf.appwriteBucketId);
+//  console.log(conf.appwriteCollectionId);
+//  console.log(conf.appwriteDatabaseId);
+//  console.log(conf.appwriteProjectId);
+//  console.log(conf.appwriteUrl);
 
   return (
     <>
