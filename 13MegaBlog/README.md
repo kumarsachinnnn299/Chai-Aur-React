@@ -5,6 +5,7 @@ This is a simple blog app that is made mainly to implement our react skills into
 * Created with Vite(React+JS)
 * Redux
 * Redux-Tool-Kit(RTK)
+* [forwardref hook](https://react.dev/reference/react/forwardRef) 
 * Tinymce Text Editor
 * HTML React Parser
 * React Hook form
